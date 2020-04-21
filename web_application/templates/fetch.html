@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h1>Recommended Products</h1>
+
+<table>
+    <tr>
+        <!--<th>User</th>-->
+        <th>Product ID</th>
+        <th>Title</th>
+    </tr>
+    {% for key,value in data.items() %}
+    <tr>
+        <td>{{key}}</td>
+        <td>{{value}}</td>
+        
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
